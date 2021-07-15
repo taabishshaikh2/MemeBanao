@@ -8,20 +8,21 @@ import MemeGenerated from './MemeGenerated';
 function App() {
   return (
     <Router>
-      <Switch>
-
     <div className="App">
+      
       <Navbar />
+    <Switch>
+      
         <Route exact path='/'>
       <Meme />
       </Route>
       <Route path='/generate'>
         <MemeGenerated />
       </Route>
+      </Switch>
       
     </div>
-    </Switch>
-    </Router>
+</Router>
   );
 }
 
